@@ -1,5 +1,9 @@
 public abstract class Resolve { }
 
+/// <summary>
+/// Abstract class representing the Resolve of a Result type.
+/// Exists due to some limitations with generics.
+/// </summary>
 public class Ok<T> : Resolve
 {
     public T Value { get; private set; }
